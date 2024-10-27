@@ -20,7 +20,7 @@ const init_attributes_observer=new MutationObserver(mutations=>
 			if(node.nodeType===1&&node.hasAttribute('init'))
 				process_init_attributes(node);
 		})
-	);
+	)
 );
 window.addEventListener('DOMContentLoaded',()=>
 	init_attributes_observer.observe(document.body,{childList:true,subtree:true})
